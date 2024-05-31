@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+body {
+    height: 100vh;
+    font-family: "Montserrat";
+    color: #00006B;
+}
+
+.div-alinhamento-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    pointer-events: none;
+    width: 100%;
+}
+
+.header {
+   align-items: center;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    left: 0px;
+    overflow: hidden;
+    padding: 16px 134px;
+    position: absolute;
+    top: 0px;
+    width:  1190px;;
+}
+
+.logo {
+    background-color: transparent;
+    flex: 0 0 auto;
+    position: relative;
+}
+
+.div-informacoes {
+    align-items: center;
+    background-color: transparent;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 64px;
+    justify-content: center;
+    position: relative;
+}
+
+.nav-bar {
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 16px;
+    position: relative;
+}
+
+
+.div-fale-conosco {
+    background-color: transparent;
+    line-height: normal;
+}
+
+.div-servicos {
+    background-color: transparent;
+    height: 44px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: center;
+    width: 108px;
+}
+
+.div-nossa-equipe {
+    background-color: transparent;
+    letter-spacing: 0.00px;
+    line-height: normal;
+}
+
+.div-case-de-sucesso {
+    background-color: transparent;
+    letter-spacing: 0.00px;
+    line-height: normal;
+}
+
+.div-menu {
+    display: inline-flex;
+    justify-content: right;
+    align-items: center;
+    width: 64px;
+}
+
+h3 {
+    font-weight: lighter;
+}
+
+.div-botao-sucesso {
+    align-items: center;
+    display: flex;
+    gap: 2px;
+    height: 41px;
+    justify-content: center;
+    padding: 12px 10px;
+    position: absolute;
+}
+
+.botao-sucesso {
+    left: 539px;
+    height: 41px;
+    overflow: hidden;
+    padding: 12px 10px;
+    top: 243px;
+    width: 370px;
+    color: #f3f2ff;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #00006b;
+    font-family: var(--font-family-montserrat);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 1.60px;
+    line-height: normal;
+    margin-bottom: -0.50px;
+    margin-top: -2.50px;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+
+.seta {
+    align-items: center;
+    margin-bottom: -0.50px;
+    margin-top: -2.50px;
+    position: relative;
+    text-align: center;
+}
+
+.div-juntos-crescimento {
+    background-color: transparent;
+    height: 261px;
+    left: 335px;
+    position: absolute;
+    top: 292px;
+    width: 774px;
+}
+
+h1 {
+    background-color: transparent;
+    color: var(--fuzzy-wuzzy);
+    font-family: var(--font-family-montserrat);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: bold;
+    height: 163px;
+    left: 0px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    width: 770px;
+}
+
+.paragrafo-negocio {
+    background-color: transparent;
+    color: #011640;
+    font-family: var(--font-family-montserrat);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    left: 100px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 180px;
+    width: 600px;
+}
+
+.div-botao-fale-conosco {
+    align-items: center;
+    display: inline-flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 12px 10px;
+    position: absolute;
+}
+
+.botao-fale-conosco {
+    height: 45px;
+    left: 610px;
+    top: 590px;
+    overflow: hidden;
+    color: #000000;
+    border-radius: 8px;
+    background-color: #ffe600;
+    font-family: var(--font-family-montserrat);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 2.00px;
+    margin-bottom: -0.50px;
+    margin-top: -2.50px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: 220px;
+    border: 0 none;
+    outline: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seta-indo-para-baixo {
+    background-color: transparent;
+    height: 68px;
+    left: 705px;
+    position: absolute;
+    top: 720px;
+    width: 60px;
+}
+
+
+.div-nossos-servicos {
+    background-color: transparent;
+    color: #00006B;
+    font-family: var(--font-family-montserrat);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    height: 90px;
+    left: 135px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 833px;
+    width: 1170px;
+}
+
+.div-transformacao-digital {
+    background-color: var(--white);
+    border: 1px solid;
+    border-color: var(--fuzzy-wuzzy);
+    border-radius: 8px;
+    box-shadow: 4px 4px 15px #00000040;
+    height: 351px;
+    left: 135px;
+    position: absolute;
+    top: 935px;
+    width: 270px;
+}
+
+.div-ciber {
+    background-color: var(--white);
+    border: 1px solid;
+    border-color: var(--fuzzy-wuzzy);
+    border-radius: 8px;
+    box-shadow: 4px 4px 15px #00000040;
+    height: 351px;
+    left: 435px;
+    position: absolute;
+    top: 935px;
+    width: 270px;
+}
+
+.div-infra {
+    background-color: var(--white);
+    border: 1px solid;
+    border-color: var(--fuzzy-wuzzy);
+    border-radius: 8px;
+    box-shadow: 4px 4px 15px #00000040;
+    height: 351px;
+    left: 735px;
+    position: absolute;
+    top: 935px;
+    width: 270px;
+}
+
+.div-big-data {
+    background-color: var(--white);
+    border: 1px solid;
+    border-color: var(--fuzzy-wuzzy);
+    border-radius: 8px;
+    box-shadow: 4px 4px 15px #00000040;
+    height: 351px;
+    left: 1035px;
+    position: absolute;
+    top: 935px;
+    width: 270px;
+}
+
+.div-foto {
+    height: 120px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.fotos-cards {
+    height: 66px;
+    left: 237px;
+    top: 928px;
+    width: 66px;
+}
+
+.texto-definicao-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.div-texto-cards {
+    height: 24px;
+    line-height: normal;
+    text-align: center;
+    top: 1008px;
+    width: 269px;
+    color: var(--fuzzy-wuzzy);
+    font-family: var(--font-family-montserrat);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.paragrafo-definicao {
+    text-overflow: clip;
+    padding: 3px;
+    width: 205px;
+    line-height: 18px;
+    margin: 0;
+    color: #000000;
+    font-family: var(--font-family-montserrat);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    
+}
