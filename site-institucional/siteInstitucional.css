@@ -407,3 +407,64 @@ h1 {
     top: 1325px;
     width: 570px;
 }
+
+.descricao {
+    overflow: hidden;
+    position: absolute;
+    background-color: #00006b;
+    border-radius: 31px;
+    height: 652px;
+    left: 135px;
+    width: 1170px;
+    top: 1702px;
+}
+
+.fotos-logos {
+    display: flex;
+    align-items: center;
+    height: 485px;
+    width: 420px;
+    padding: 70px;
+}
+
+.linha {
+    width: 5px;
+}
+
+.descricao-case {
+    height: 345px;
+    left: 300px;
+    position: absolute;
+    top: 140px;
+    width: 841px;
+}
+
+.case-de-sucesso {
+    color: #FFE600;
+    font-family: var(--font-family-montserrat);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: bolder;
+    height: 58px;
+    left: 331px;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    width: 510px;
+}
+
+.paragrafo-case-de-sucesso {
+    color: #d9d9d9;
+    font-family: var(--font-family-montserrat);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    height: 228px;
+    left: 331px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    position: absolute;
+    text-align: left;
+    top: 50px;
+    width: 510px;
+}
