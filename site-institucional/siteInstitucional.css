@@ -335,3 +335,75 @@ h1 {
     font-weight: 400;
     
 }
+
+.div-solucao-completa {
+    background-color: #00006b;
+    border: 1px solid;
+    border-color: var(--fuzzy-wuzzy);
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px #00000040;
+    height: 300px;
+    left: 135px;
+    position: absolute;
+    top: 1325px;
+    width: 570px;
+}
+
+.titulo-solucao-completa {
+    color: #FFF;
+    font-family: var(--font-family-montserrat);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    left: 168px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    text-align: center;
+    top: 1344px;
+    white-space: nowrap;
+    width: 344px;
+    margin-left: 28px;
+}
+
+
+.foto-check {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.texto-solucao {
+    color: white;
+    font-family: var(--font-family-montserrat);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: 168px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    text-align: left;
+    top: 1375px;
+    width: 489px;
+    margin-left: 35px;
+}
+
+.tecnologia {
+    height: 300px;
+    left: 735px;
+    object-fit: cover;
+    top: 1287px;
+    width: 569px;
+}
+
+.div-tecnologia {
+    background-color: #00006b;
+    border: 1px solid;
+    border-color: var(--fuzzy-wuzzy);
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px #00000040;
+    height: 295px;
+    left: 736px;
+    position: absolute;
+    top: 1325px;
+    width: 570px;
+}
