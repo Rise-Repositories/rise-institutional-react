@@ -2,7 +2,7 @@
 
 
 body {
-    height: 100vh;
+    height: 100%;
     font-family: "Montserrat";
     color: #00006B;
 }
@@ -16,16 +16,14 @@ body {
 }
 
 .header {
-   align-items: center;
+    align-items: center;
     background-color: var(--white);
     display: flex;
     justify-content: space-between;
     left: 0px;
     overflow: hidden;
     padding: 16px 134px;
-    position: absolute;
     top: 0px;
-    width:  1190px;;
 }
 
 .logo {
@@ -92,17 +90,22 @@ h3 {
 }
 
 .div-botao-sucesso {
-    align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 200px;
+        align-items: flex-end;
+        
+}
+
+.div-cards {
+    height: 335px;
     display: flex;
-    gap: 2px;
-    height: 41px;
     justify-content: center;
-    padding: 12px 10px;
-    position: absolute;
+    gap: 30px;
+    align-items: flex-end;
 }
 
 .botao-sucesso {
-    left: 539px;
     height: 41px;
     overflow: hidden;
     padding: 12px 10px;
@@ -112,6 +115,7 @@ h3 {
     border-radius: 60px;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #00006b;
     font-family: var(--font-family-montserrat);
     font-size: var(--font-size-l);
@@ -121,7 +125,6 @@ h3 {
     line-height: normal;
     margin-bottom: -0.50px;
     margin-top: -2.50px;
-    position: relative;
     text-align: center;
     justify-content: center;
 }
@@ -135,12 +138,17 @@ h3 {
 }
 
 .div-juntos-crescimento {
-    background-color: transparent;
-    height: 261px;
+    height: 172px;
     left: 335px;
-    position: absolute;
+    display: flex;
+    justify-content: center;
     top: 292px;
-    width: 774px;
+    align-items: flex-start;
+}
+
+.paragrafo-crescimento {
+    display: flex;
+    justify-content: center;
 }
 
 h1 {
@@ -154,7 +162,6 @@ h1 {
     left: 0px;
     letter-spacing: 0.00px;
     line-height: normal;
-    position: absolute;
     text-align: center;
     top: 0px;
     width: 770px;
@@ -170,7 +177,6 @@ h1 {
     left: 100px;
     letter-spacing: 0.00px;
     line-height: normal;
-    position: absolute;
     text-align: center;
     top: 180px;
     width: 600px;
@@ -178,11 +184,10 @@ h1 {
 
 .div-botao-fale-conosco {
     align-items: center;
-    display: inline-flex;
-    gap: 10px;
     justify-content: center;
+    display: flex;
     padding: 12px 10px;
-    position: absolute;
+    flex-direction: column;
 }
 
 .botao-fale-conosco {
@@ -200,7 +205,6 @@ h1 {
     letter-spacing: 2.00px;
     margin-bottom: -0.50px;
     margin-top: -2.50px;
-    position: relative;
     text-align: center;
     white-space: nowrap;
     width: 220px;
@@ -215,9 +219,9 @@ h1 {
     background-color: transparent;
     height: 68px;
     left: 705px;
-    position: absolute;
     top: 720px;
     width: 60px;
+    margin-top: 75px;
 }
 
 
@@ -232,10 +236,8 @@ h1 {
     left: 135px;
     letter-spacing: 0.00px;
     line-height: normal;
-    position: absolute;
     text-align: center;
     top: 833px;
-    width: 1170px;
 }
 
 .div-transformacao-digital {
@@ -246,7 +248,6 @@ h1 {
     box-shadow: 4px 4px 15px #00000040;
     height: 351px;
     left: 135px;
-    position: absolute;
     top: 935px;
     width: 270px;
 }
@@ -259,7 +260,6 @@ h1 {
     box-shadow: 4px 4px 15px #00000040;
     height: 351px;
     left: 435px;
-    position: absolute;
     top: 935px;
     width: 270px;
 }
@@ -272,7 +272,6 @@ h1 {
     box-shadow: 4px 4px 15px #00000040;
     height: 351px;
     left: 735px;
-    position: absolute;
     top: 935px;
     width: 270px;
 }
@@ -285,9 +284,15 @@ h1 {
     box-shadow: 4px 4px 15px #00000040;
     height: 351px;
     left: 1035px;
-    position: absolute;
     top: 935px;
     width: 270px;
+}
+
+.div-todos-os-cards {
+    align-items: start;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 .div-foto {
@@ -344,7 +349,6 @@ h1 {
     box-shadow: 0px 4px 4px #00000040;
     height: 300px;
     left: 135px;
-    position: absolute;
     top: 1325px;
     width: 570px;
 }
@@ -403,14 +407,12 @@ h1 {
     box-shadow: 0px 4px 4px #00000040;
     height: 295px;
     left: 736px;
-    position: absolute;
     top: 1325px;
     width: 570px;
 }
 
 .descricao {
     overflow: hidden;
-    position: absolute;
     background-color: #00006b;
     border-radius: 31px;
     height: 652px;
@@ -431,12 +433,16 @@ h1 {
     width: 5px;
 }
 
+.div-descricao {
+    display: flex;
+    justify-content: center;
+    height: 770px;
+    align-items: flex-end;
+}
+
 .descricao-case {
-    height: 345px;
     left: 300px;
-    position: absolute;
     top: 140px;
-    width: 841px;
 }
 
 .case-de-sucesso {
@@ -445,12 +451,10 @@ h1 {
     font-size: 40px;
     font-style: normal;
     font-weight: bolder;
-    height: 58px;
     left: 331px;
-    position: absolute;
     text-align: left;
     top: 0px;
-    width: 510px;
+    margin-left:22px;
 }
 
 .paragrafo-case-de-sucesso {
@@ -459,12 +463,179 @@ h1 {
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    height: 228px;
     left: 331px;
     letter-spacing: 0.00px;
     line-height: normal;
-    position: absolute;
     text-align: left;
     top: 50px;
     width: 510px;
+    margin-left:22px;
+}
+
+.gradiente {
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(116.00000068545341, 156.00000590085983, 215.0000023841858) 22.899961471557617%, rgb(43.00000123679638, 40.00000141561031, 131.00000739097595) 62.39996552467346%, rgb(0, 0, 107.00000122189522) 100%);
+    background-color: transparent;
+    height: 960px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+.engloba-nossa-equipe{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 850px;
+}
+
+.nossa-equipe {
+    align-items: center;
+    background-color: #FFF;
+    border-radius: 31px;
+    display: flex;
+    flex-direction: column;
+    height: 652px;
+    justify-content: center;
+    top: 113px;
+    width: 1170px;
+}
+
+.estilo-paragrafo-nossa-equipe{
+    color: var(--fuzzy-wuzzy);
+    font-family: var(--font-family-montserrat);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    height: 72px;
+    position: relative;
+    text-align: center;
+    width: 398px;
+    letter-spacing: 0.00px;
+    background-color: transparent;
+    letter-spacing: 0.00px;
+    line-height: normal;
+}
+
+.fotos-integrantes {
+    display: flex;
+    align-items: center;
+    width: 1170px;
+    justify-content: space-around;
+}
+
+.estilo-nome-inicio {
+    color: var(--fuzzy-wuzzy);
+    font-family: var(--font-family-montserrat);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 600;
+}
+
+.descricao-participantes {
+    display: flex;
+    gap: 40px;
+    width: 1170px;
+    justify-content: space-around;
+}
+
+.estilo-nome-texto-no-final {
+    color: var(--fuzzy-wuzzy);
+    font-family: var(--font-family-montserrat);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 600;
+    text-align: end;
+}
+
+.estilo-nome-meio {
+    color: var(--fuzzy-wuzzy);
+    font-family: var(--font-family-montserrat);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+}
+
+.formulario {
+    background-color: transparent;
+    left: 0px;
+    top: 142px;
+    display: flex;
+    justify-content: center;
+}
+
+.retangulo-formulario {
+    background-color: #00006B;
+    border-radius: 32px;
+    height: 641px;
+    left: 0px;
+    overflow: hidden;
+    top: 9px;
+    width: 491px;
+    margin-top: 70px;
+}
+
+.entre-em-contato {
+    background-color: transparent;
+    color: #FFE600;
+    font-family: var(--font-family-poppins);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    height: auto;
+    left: 40px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    padding: 35px;
+    text-align: left;
+    top: 65px;
+    width: auto;
+}
+
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+}
+
+.dados div {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.estilo-dados {
+    margin-left: 10px;
+}
+
+.dados img {
+    width: 24px;
+    height: auto;
+}
+
+
+.estilo-dados {
+    color: #FFF;
+    height: auto;
+    left: 49px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    text-align: left;
+}
+
+.esferas {
+    position: relative;
+}
+
+.bola-amarela {
+    bottom: 0; /* Distância entre a bola amarela e a parte inferior da div formulário */
+    right: 0; /* Distância entre a bola amarela e a borda direita da div formulário */
+}
+
+
+.bola-azul {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
