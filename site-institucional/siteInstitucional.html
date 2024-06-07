@@ -198,12 +198,12 @@
                             <p>gabriel.bsouza@sptech.school</p>
                         </div>
                     </div>
-                        <div class="fotos-integrantes">
-                            <img src="src/andrey.png">
-                            <img src="src/ana.png">
-                            <img src="src/lucas.png">
-                        </div>
-                        <div class="descricao-participantes">
+                    <div class="fotos-integrantes">
+                        <img src="src/andrey.png">
+                        <img src="src/ana.png">
+                        <img src="src/lucas.png">
+                    </div>
+                    <div class="descricao-participantes">
                         <div class="descricao-andrey">
                             <p class="estilo-nome-inicio">Andrey Rodrigues</p>
                             <p>andrey.rodrigues@sptech.school</p>
@@ -216,44 +216,88 @@
                             <p class="estilo-nome-texto-no-final" class="texto-no-final">Lucas Garcia</p>
                             <p>lucas.garcia@sptech.school</p>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="formulario">
-        <div class="retangulo-formulario">
-            <p class="entre-em-contato">Entre em contato</p>
+        <div class="formulario">
+            <div class="retangulo-formulario">
+                <p class="entre-em-contato">Entre em contato</p>
 
-            <div class="dados">
-                <div class="dados-telefone">
-                <img src="src/telefone.png">
-                <p class="estilo-dados">+55 11 944722626</p>
+                <div class="dados">
+                    <div class="dados-telefone">
+                        <img src="src/telefone.png">
+                        <p class="estilo-dados">+55 11 944722626</p>
+                    </div>
+
+                    <div class="dados-email">
+                        <img src="src/email.png" alt="email">
+                        <p class="estilo-dados">rise@gmail.com</p>
+                    </div>
+
+                    <div class="dados-endereco">
+                        <img src="src/mapa.png">
+                        <p class="estilo-dados">Rua Haddock Lobo n° 595</p>
+                    </div>
+                </div>
+
+                <div class="esferas">
+                    <img src="src/bola-amarela.png" class="bola-amarela">
+                    <img src="src/bola-azul.png" class="bola-azul">
+                </div>
             </div>
 
-            <div class="dados-email">
-                <img src="src/email.png" alt="email">
-                <p class="estilo-dados">rise@gmail.com</p>
+            <div class="formulario-com-campos">
+                <div class="divAuxHorizontal">
+                    <div class="form-control">
+                        <input type="text" required />
+                        <label for="text"> Nome: </label>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" required />
+                        <label for="text"> Sobrenome: </label>
+                    </div>
+                </div>
+
+                <div class="divAuxHorizontal">
+                    <div class="form-control">
+                        <input type="text" required />
+                        <label for="text"> Email: </label>
+                    </div>
+
+                    <div class="form-control">
+                        <input type="text" required />
+                        <label for="text"> Numero de Telefone: </label>
+                    </div>
+                </div>
+                <div class="form-control2">
+                    <input type="text" id="inputDesc" required />
+                    <label for="text" id="labelDesc"> Descrição do Projeto: </label>
+                </div>
+                <div class="divButton">
+                    <button class="custom-button">Enviar</button>
+                </div>
             </div>
-
-            <div class="dados-endereco">
-                <img src="src/mapa.png">
-                <p class="estilo-dados">Rua Haddock Lobo n° 595</p>
-            </div>
         </div>
 
-        <div class="esferas">
-            <img src="src/bola-amarela.png" class="bola-amarela">
-            <img src="src/bola-azul.png" class="bola-azul">
-        </div>
+        <div class="footer">
+            
         </div>
 
-        <div class="formulario-com-campos">
-            <p>Nome</p>
-            <img src="src/linha-azul.png">
-        </div>
-    </div>
 
 </body>
 
+
+
 </html>
+
+<script>
+    const labels = document.querySelectorAll('form-control label')
+    labels.forEach(label => {
+        label.innerHTML = label.innerText.split('').map((letter, idx) =>
+            `<span> ${letter}</span>`
+
+        );
+    })
+</script>

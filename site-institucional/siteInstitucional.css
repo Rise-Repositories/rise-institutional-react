@@ -3,6 +3,7 @@
 
 body {
     height: 100%;
+    margin: 0px;
     font-family: "Montserrat";
     color: #00006B;
 }
@@ -639,3 +640,128 @@ h1 {
     bottom: 0;
     right: 0;
 }
+
+.formulario-com-campos{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin-top: 90px;
+    padding: 35px;
+    height: 500px;
+}
+
+.divAuxHorizontal{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.form-control,label,input{
+    padding:5px;
+    margin:10px;
+    position:relative;
+    width:300px;  
+    font-family: "Montserrat";
+  }
+  .form-control input{
+    border:0;
+    border-bottom:1px solid #00006b;
+    outline:0;
+    width:100%;
+    background-color:transparent;
+    font-size:16px;
+    font-family: "Montserrat";
+  }
+  .form-control input:focus{
+     border-bottom:1px solid #00006b;
+     font-family: "Montserrat";
+  }
+  .form-control label{ 
+    position:absolute;
+    top:-7px;
+    left:0;  
+    font-size:18px;
+    font-family: "Montserrat";
+  }
+  .form-control input:focus+label{
+    transform:translateY(-14px);
+    color:#00006b;
+    transition:0.2s ease-out;
+    font-family: "Montserrat";
+  }
+
+  .form-control2,#labelDesc,#inputDesc{
+    padding:5px;
+    margin:10px;
+    position:relative;
+    width:650px;  
+    font-family: "Montserrat";
+  }
+  .form-control2 #inputDesc{
+    border:0;
+    border-bottom:1px solid #00006b;
+    outline:0;
+    width:100%;
+    background-color:transparent;
+    font-size:16px;
+    font-family: "Montserrat";
+  }
+  .form-control2 #inputDesc:focus{
+     border-bottom:1px solid #00006b;
+     font-family: "Montserrat";
+  }
+  .form-control2 #labelDesc{ 
+    position:absolute;
+    top:-7px;
+    left:0;  
+    font-size:18px;
+    font-family: "Montserrat";
+  }
+  .form-control2 #inputDesc:focus+#labelDesc{
+    transform:translateY(-14px);
+    color:#00006b;
+    transition:0.2s ease-out;
+    font-family: "Montserrat";
+  }
+
+  .divButton{
+    display: flex;
+    align-self: end;
+  }
+
+  .custom-button {
+    background-color: #1a0755; /* Cor de fundo do botão (azul escuro) */
+    color: #ffd700; /* Cor do texto (amarelo) */
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para o botão */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #0f0330; /* Cor de fundo do botão ao passar o mouse */
+    transform: translateY(-2px); /* Leve movimento para cima ao passar o mouse */
+}
+
+.custom-button:active {
+    transform: translateY(2px); /* Leve movimento para baixo ao clicar */
+}
+
+/* Footer */
+
+.footer{
+    background-color: #00006b;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-family: "Montserrat";
+    margin-top: 80px;
+}
+
