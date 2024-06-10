@@ -1,33 +1,39 @@
-import React from "react"
+import React, { useRef } from 'react';
 
 const Home = () => {
+    const faleConoscoRef = useRef(null);
+    const servicosRef = useRef(null);
+    const nossaEquipeRef = useRef(null);
+    const caseDeSucessoRef = useRef(null);
+
+    const scrollToSection = (ref) => {
+        ref.current.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <div className="container">
             <header className="header">
                 <img src="/images/logo.png" className="logo" alt="logo" />
                 <div className="div-informacoes">
                     <div className="nav-bar">
-                        <div className="div-fale-conosco">
+                        <div className="div-fale-conosco" onClick={() => scrollToSection(faleConoscoRef)}>
                             <h3>Fale Conosco</h3>
                         </div>
-                        <div className="div-servicos">
+                        <div className="div-servicos" onClick={() => scrollToSection(servicosRef)}>
                             <h3>Serviços</h3>
                         </div>
-                        <div className="div-nossa-equipe">
+                        <div className="div-nossa-equipe" onClick={() => scrollToSection(nossaEquipeRef)}>
                             <h3>Nossa equipe</h3>
                         </div>
-                        <div className="div-case-de-sucesso">
+                        <div className="div-case-de-sucesso" onClick={() => scrollToSection(caseDeSucessoRef)}>
                             <h3>Case de sucesso</h3>
-                        </div>
-                        <div className="div-menu">
-                            <img src="/images/menu.png" className="menu" alt="menu" />
                         </div>
                     </div>
                 </div>
             </header>
 
             <div className="div-botao-sucesso">
-                <button className="botao-sucesso">
+                <button className="botao-sucesso" onClick={() => scrollToSection(caseDeSucessoRef)}>
                     Veja nosso case de sucesso
                     <img src="/images/seta.png" className="seta" alt="seta" />
                 </button>
@@ -44,14 +50,15 @@ const Home = () => {
             </div>
 
             <div className="div-botao-fale-conosco">
-                <button className="botao-fale-conosco">
+                <button className="botao-fale-conosco" onClick={() => scrollToSection(faleConoscoRef)}>
                     Fale Conosco
                     <img src="/images/seta preta.png" alt="seta preta" />
                 </button>
                 <img src="/images/seta para baixo.png" className="seta-indo-para-baixo" alt="seta para baixo" />
             </div>
 
-            <div className="div-nossos-servicos">
+            {/* Adicione as referências às seções */}
+            <div ref={servicosRef} className="div-nossos-servicos">
                 <p>Nossos serviços</p>
             </div>
 
@@ -131,7 +138,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="div-descricao">
+            <div ref={caseDeSucessoRef} className="div-descricao">
                 <div className="descricao">
                     <div className="fotos-logos">
                         <img src="/images/logo-rise-maior.png" className="logo-maior" alt="foto do logo" />
@@ -148,7 +155,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="gradiente">
+            <div ref={nossaEquipeRef} className="gradiente">
                 <div className="engloba-nossa-equipe">
                     <div className="nossa-equipe">
                         <div className="paragrafo-nossa-equipe">
@@ -162,7 +169,7 @@ const Home = () => {
                         </div>
                         <div className="descricao-participantes">
                             <div className="descricao-yuzo">
-                                <p className="estilo-nome-inicio">Daniel Yuzo</p>
+                                <p className="estilo-nome-meio">Daniel Yuzo</p>
                                 <p>daniel.palma@sptech.school</p>
                             </div>
                             <div className="descricao-nicolas">
@@ -170,7 +177,7 @@ const Home = () => {
                                 <p>nicolas.zanardi@sptech.school</p>
                             </div>
                             <div className="descricao-gabriel">
-                                <p className="estilo-nome-texto-no-final">Gabriel Bifon</p>
+                                <p className="estilo-nome-meio">Gabriel Bifon</p>
                                 <p>gabriel.bsouza@sptech.school</p>
                             </div>
                         </div>
@@ -181,7 +188,7 @@ const Home = () => {
                         </div>
                         <div className="descricao-participantes">
                             <div className="descricao-andrey">
-                                <p className="estilo-nome-inicio">Andrey Rodrigues</p>
+                                <p className="estilo-nome-meio">Andrey Rodrigues</p>
                                 <p>andrey.rodrigues@sptech.school</p>
                             </div>
                             <div className="descricao-ana">
@@ -189,7 +196,7 @@ const Home = () => {
                                 <p>ana.bueno@sptech.school</p>
                             </div>
                             <div className="descricao-lucas">
-                                <p className="estilo-nome-texto-no-final">Lucas Garcia</p>
+                                <p className="estilo-nome-meio">Lucas Garcia</p>
                                 <p>lucas.garcia@sptech.school</p>
                             </div>
                         </div>
@@ -197,7 +204,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="formulario">
+            <div ref={faleConoscoRef} className="formulario">
                 <div className="retangulo-formulario">
                     <p className="entre-em-contato">Entre em contato</p>
 
@@ -280,13 +287,13 @@ const Home = () => {
                         </div>
                         <div className="informacoes-dados">
                             <p className="estilo-infos">Menu</p>
-                            <div className="frase-nosso-equipe">
+                            <div className="frase-nosso-equipe" onClick={() => scrollToSection(nossaEquipeRef)}>
                                 <p>Nossa Equipe</p>
                             </div>
-                            <div className="frase-projetos">
+                            <div className="frase-projetos" onClick={() => scrollToSection(servicosRef)}>
                                 <p>Projetos</p>
                             </div>
-                            <div className="frase-fale-conosco">
+                            <div className="frase-fale-conosco" onClick={() => scrollToSection(faleConoscoRef)}>
                                 <p>Fale conosco</p>
                             </div>
                         </div>
@@ -308,15 +315,16 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="div-botao-fale-conosco">
-                            <button className="botao-fale-conosco">
+                            <button className="botao-fale-conosco" onClick={() => scrollToSection(faleConoscoRef)}>
                                 Fale Conosco
                                 <img src="/images/seta preta.png" alt="seta preta" />
                             </button>
-                            </div>
                         </div>
                     </div>
+                </div>
             </footer>
         </div>
     );
 };
+
 export default Home;

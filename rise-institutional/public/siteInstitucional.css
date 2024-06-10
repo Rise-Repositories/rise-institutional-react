@@ -24,6 +24,7 @@ body {
     left: 0px;
     overflow: hidden;
     padding: 16px 134px;
+    cursor: pointer;
     top: 0px;
 }
 
